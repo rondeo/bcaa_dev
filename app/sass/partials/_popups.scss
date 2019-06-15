@@ -1,0 +1,188 @@
+.callback {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	width: 293px;
+	padding: 27px 30px 30px 30px;
+	background: #FFFFFF;
+	opacity: 0;
+	pointer-events: none;
+	box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.05);
+	border-radius: 5px;
+	transition: 0.3s ease-in-out;
+
+	&.show {
+		opacity: 1;
+		pointer-events: all;
+	}
+
+	
+
+	.input {
+		width: 100%;
+	}
+
+	.input_wr {
+		margin-bottom: 18px;
+	}
+
+	.alert {
+		display: none;
+		
+		.alert_text {
+			display: block;
+			margin-bottom: 15px;
+			font-size: 20px;
+			color: #404040;
+			
+			&:before {
+				content:'';
+				display: block;
+				width: 50px;
+				height: 50px;
+				margin-top: 40px;
+				margin-bottom: 33px;
+				background: url(../img/checked.svg) center no-repeat;
+			}
+		}
+	}
+}
+
+.contact__info {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	width: 520px;
+	padding: 22px 27px 27px 27px;
+	background: #FFFFFF;
+	color: #616161;
+	opacity: 0;
+	pointer-events: none;
+	box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.05);
+	border-radius: 5px;
+	transition: 0.3s ease-in-out;
+
+	&.show {
+		opacity: 1;
+		pointer-events: all;
+	}
+
+	.numbers {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 22px;
+	}
+
+	.numbers__items {
+		display: flex;
+		flex-direction: column;
+
+		.numbers__item {
+			display: flex;
+			align-items: center;
+			margin-bottom: 9px;
+			font-size: 15px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&.kyivstar {
+
+				&:before {
+					content: '';
+					width: 18px;
+					height: 18px;
+					margin-right: 10px;
+					background: url(../img/kyivstar.svg) center no-repeat;
+				}
+			}
+			&.lifecell {
+
+				&:before {
+					content: '';
+					width: 18px;
+					height: 18px;
+					margin-right: 10px;
+					background: url(../img/lifecell.svg) center no-repeat;
+				}
+			}
+			&.vodafone {
+
+				&:before {
+					content: '';
+					width: 16px;
+					height: 16px;
+					margin-right: 12px;
+					background: url(../img/vodafone.svg) center no-repeat;
+				}
+			}
+		}
+	}
+
+	.callcenter {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		font-size: 15px;
+		
+		.callcenter__name {
+			font-weight: 500;
+		}
+
+		.callcenter__hours {
+
+			span {
+				display: block;
+				white-space: nowrap;
+			}
+		}
+
+		.callcenter__email {
+
+			a {
+				color:  #408DD5;
+			}
+		}
+	}
+
+	.separatist {
+		width: 100%;
+		height: 1px;
+		margin-bottom: 18px;
+		background: #F2F2F2; 
+	}
+
+	.work_hours {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.addresses {
+		font-size: 15px; 
+
+		.addresses__item {
+			display: inline-block;
+			color:  #408DD5;
+			border-bottom: 1px dashed #408DD5;
+		}
+	}
+}
+
+.popup__name {
+	display: block;
+	margin-bottom: 20px;
+	font-size: 22px;
+	color: #616161;
+	font-weight:500;
+}
+
+.close {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	width: 17px;
+	height: 17px;
+}
