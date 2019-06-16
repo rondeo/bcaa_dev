@@ -60,15 +60,8 @@ $(document).ready(function () {
         $(this).html($(this).text().replace(regex, "<span class='marker'>" + search + "</span>"));
       });
     })
-
-    $(document).ready(function () {
-
-    });
   })
 
-  $('input[type=submit]').click(function (e) {
-    e.preventDefault();
-  })
 
   $('.close').click(function () {
     console.log($(this).parent())
@@ -89,6 +82,20 @@ $(document).ready(function () {
       $(this).closest('.header__dropdown--language').find('.select-placeholder').attr('data-value', value);
       $(this).closest('.header__dropdown--language').find('.language__list').animate({ height: 'hide' }, 100);
     });
+  })
+
+
+  // catalog hover aside
+  $(function () {
+    $('.aside--catalog').find('.catalog__link').hover(function () {
+
+      $('.catalog').addClass('hover');
+    })
+
+    $('.aside--catalog').find('.catalog__link').mouseleave(function () {
+
+      $('.catalog').removeClass('hover');
+    })
   })
 
   $('.input--phone').mask("+38(000) 000-00-00", { placeholder: "+ 38 ( ___ ) ___ - __ - __" });

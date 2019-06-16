@@ -25,6 +25,11 @@
 
     .header__link {
         margin-right: 36px;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            color: #408dd5;
+        }
 
         &:last-child {
             margin-right: 0;
@@ -49,15 +54,28 @@
         align-items: center;
         margin-right: 53px;
         cursor: pointer;
+        transition: 0.2s ease-in-out;
 
-        &::after {
-            content: "";
-			display: inline-block;
-			width: 12px;
-			height: 6px;
-			margin-left: 9px;
-			background: url(../img/arrow_down.svg) center no-repeat;       
+        &:hover {
+
+            .text,
+            .select-placeholder {
+                color: #408dd5;
+            }
+           
         }
+
+        .text {
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 12px;
+                height: 6px;
+                margin-left: 9px;
+                background: url(../img/arrow_down.svg) center no-repeat;       
+            }
+        }
+        
 
         &:last-child {
             margin-right: 0;
