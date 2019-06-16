@@ -319,7 +319,8 @@ img {
 }
 
 .header__dropdown--language {
-    position: relative;
+	position: relative;
+	width: 47px;
     margin-right: 72px;
 	cursor: pointer;
 	transition: 0.2s ease-in-out;

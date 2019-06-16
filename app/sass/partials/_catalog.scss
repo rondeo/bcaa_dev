@@ -42,6 +42,16 @@
     font-size: 15px;
     color: #408DD5;
 
+    &:last-child {
+
+        .catalog__link {
+            
+            &::before {
+                display: none;
+            }
+        }
+    }
+
     
 
     .catalog__link {
@@ -55,6 +65,11 @@
         &:hover {
             background: #F8F8F8;
             color: #D65959;
+
+            &~ .menu_lvl {
+                display: block;
+            }
+            
         }
 
         &::after {
@@ -85,7 +100,8 @@
         position: absolute;
         top: -1px;
         left: calc(100% - 129px);
-        width: 258px;
+        display: none;
+        width: 260px;
         height: calc(100% + 2px );
         background: #fff;
         border: 1px solid #408DD5;
@@ -93,6 +109,7 @@
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         padding-top: 70px;
+        box-shadow: inset 17px 0 13px -14px rgba(0,0,0,.04);
 
         .menu__title {
             display: block;
@@ -103,6 +120,18 @@
             font-size: 16px;
             text-transform: uppercase;
             color: #616161;
+        }
+
+        .catalog__item {
+            padding-right: 26px;
+        }
+
+        .catalog__link {
+            padding-right: 0;
+
+            &::after {
+                display: none;
+            }
         }
     }
 }
