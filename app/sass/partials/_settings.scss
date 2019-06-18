@@ -70,7 +70,7 @@ img {
 }
 
 .wr {
-	max-width: 1600px;
+	max-width: 1640px;
 	margin: 0 auto;
 	padding: 0 20px;
 }
@@ -78,11 +78,16 @@ img {
 .main_wrapper {
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
 	width: 100%;
-	max-width: 1600px;
+	max-width: 1640px;
 	margin: 0 auto;
 	margin-top: 37px;
 	padding: 0 20px;
+
+	.main {
+		max-width: 1290px;
+	}
 }
 
 .no_scroll {
@@ -320,15 +325,21 @@ img {
 
 .header__dropdown--language {
 	position: relative;
-	width: 47px;
+	width: 43px;
     margin-right: 72px;
 	cursor: pointer;
 	transition: 0.2s ease-in-out;
 
     .select-placeholder {
+		position: relative;
+		display: block;
+		width: 100%;
 
         &::after {
-            content: "";
+			content: "";
+			position: absolute;
+			top: 7px;
+			right: 2px;
 			display: inline-block;
 			width: 12px;
 			height: 6px;

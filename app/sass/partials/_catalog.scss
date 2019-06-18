@@ -1,5 +1,8 @@
 .aside--catalog {
-
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 12px 0 10px 0;
 }
 
 .catalog {
@@ -10,8 +13,8 @@
     width: 407px;
     background: #fff;
     border: 1px solid #408DD5;
-    border-radius: 10px 0px 0px 10px;
-    padding-top: 70px;
+    border-radius: 10px 0px 10px 10px;
+    padding-top: 48px;
     padding-bottom: 10px;
     opacity: 0;
     pointer-events: none;
@@ -35,7 +38,7 @@
 
     .catalog__item {
         
-        max-width: 276px;
+        max-width: 269px;
     }
 }
 
@@ -59,7 +62,7 @@
         .menu_lvl {
 
             .catalog__link {
-                
+
                 &::before {
                     display: block;
                 }
@@ -78,15 +81,14 @@
         display: block;
         width: 100%;
         height: 100%;
-        padding: 6px 25px;
+        padding: 0 23px;
+        padding-top: 7px;
+        padding-bottom: 8.5px;
         transition: 0.2s ease-in-out;
 
         &:hover {
             background: #F8F8F8;
             color: #D65959;
-
-           
-            
         }
 
         &::after {
@@ -107,7 +109,7 @@
             left: 25px;
             bottom: 0;
             display: block;
-            width: 100%;
+            width: calc(100% - 25px);
             height: 1px;
             background: linear-gradient(to right, rgba(227,227,227,1) 0%, rgba(255,255,255,1) 76%, rgba(255,255,255,1) 100%);
         }
@@ -116,7 +118,7 @@
     .menu_lvl {
         position: absolute;
         top: -1px;
-        left: calc(100% - 129px);
+        left: calc(100% - 136px);
         display: none;
         width: 260px;
         height: calc(100% + 2px );
@@ -125,13 +127,13 @@
         border-left: 0;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
-        padding-top: 70px;
+        padding-top: 65px;
         box-shadow: inset 17px 0 13px -14px rgba(0,0,0,.04);
 
         .menu__title {
             display: block;
-            margin-bottom: 10px;
-            padding-left: 25px;
+            margin-bottom: 5px;
+            padding-left: 20px;
             font-family: 'ProximaNovaCondensed';
             font-weight: 500;
             font-size: 16px;
@@ -145,6 +147,7 @@
 
         .catalog__link {
             padding-right: 0;
+            padding-left: 19px;
 
             &::after {
                 display: none;
