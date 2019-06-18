@@ -4,7 +4,7 @@
 	right: 0;
 	z-index: 2;
 	width: 293px;
-	padding: 27px 30px 30px 30px;
+	padding: 24px 30px 30px 30px;
 	background: #FFFFFF;
 	opacity: 0;
 	pointer-events: none;
@@ -41,8 +41,8 @@
 				display: block;
 				width: 50px;
 				height: 50px;
-				margin-top: 40px;
-				margin-bottom: 33px;
+				margin-top: 41px;
+				margin-bottom: 36px;
 				background: url(../img/checked.svg) center no-repeat;
 			}
 		}
@@ -136,6 +136,7 @@
 
 			span {
 				display: block;
+				margin-bottom: 7px;
 				white-space: nowrap;
 			}
 		}
@@ -165,8 +166,13 @@
 
 		.addresses__item {
 			display: inline-block;
+			margin-bottom: 10px;
 			color:  #408DD5;
 			border-bottom: 1px dashed #408DD5;
+
+			&:last-child {
+				margin-bottom: 7px;
+			}
 		}
 	}
 }

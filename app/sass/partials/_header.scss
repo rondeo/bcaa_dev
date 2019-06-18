@@ -62,6 +62,13 @@
             .select-placeholder {
                 color: #408dd5;
             }
+
+            .text {
+
+                &::after {
+                    background: url(../img/arrow_down_blue.svg) center no-repeat;
+                }
+            }
            
         }
 
@@ -73,10 +80,11 @@
             &::after {
                 content: "";
                 display: inline-block;
-                width: 12px;
-                height: 6px;
-                margin-left: 9px;
-                background: url(../img/arrow_down.svg) center no-repeat;       
+                width: 14px;
+                height: 7px;
+                margin-left: 7px;
+                background: url(../img/arrow_down.svg) center no-repeat;    
+                transition: 0.2s ease-in-out;   
             }
         }
         
@@ -147,12 +155,13 @@
             &:after {
                 content: '';
                 position: absolute;
-                right: -29px;
+                right: -31px;
                 top: 5px;
                 display: block;
                 width: 17px;
                 height: 10px;
                 background: url(../img/arrow_down_blue.svg) center no-repeat;
+                background-size: cover;
                 transform-origin: center;
                 transition: 0.2s ease-in-out;
             }
@@ -164,7 +173,7 @@
         flex-grow: 1;
         margin-bottom: 22px;
         margin-right: 50px;
-        transition: 0.3s ease-in-out;
+        // transition: 0.3s ease-in-out;
 
         &.focus {
             background: #FFFFFF;
@@ -204,7 +213,7 @@
             top: 100%;
             left: 0;
             width: 100% ;
-            padding: 0 30px 17px 30px;
+            padding: 0 30px 17px 34px;
             background: #FFFFFF;
             box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.05);
             border-bottom-left-radius: 5px;
@@ -222,6 +231,7 @@
         .search__item {
             display: flex;
             padding: 15px 0;
+            padding-bottom: 14px;
             border-bottom: 1px solid #F2F2F2;
             
             .img_wr {
@@ -258,7 +268,7 @@
 
         .search__all {
             display: block;
-            margin-top: 15px;
+            margin-top: 16px;
             font-size: 14px;
             color: #408DD5;
         }
