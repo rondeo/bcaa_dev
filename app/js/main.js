@@ -98,6 +98,13 @@ $(document).ready(function () {
     })
   })
 
+  // hamburger
+  $('.menu_toggle').click(function () {
+    $('.menu_toggle').toggleClass('open');
+
+    $('.mobile_menu').toggleClass('open');
+  });
+
   $('.input--phone').mask("+38(000) 000-00-00", { placeholder: "+ 38 ( ___ ) ___ - __ - __" });
 
   $(document).on('click', function (e) {
