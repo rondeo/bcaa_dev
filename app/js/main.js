@@ -105,6 +105,20 @@ $(document).ready(function () {
     $('.mobile_menu').toggleClass('open');
   });
 
+  //mobile menu show
+  $(function () {
+
+    var menu = $('.mobile_menu');
+
+    menu.find('.catalog__link').click(function () {
+      $(this).next('.menu_lvl').addClass('show');
+    })
+
+    menu.find('.menu_back').click(function () {
+      $(this).parent('.menu_lvl').removeClass('show');
+    })
+  })
+
   $('.input--phone').mask("+38(000) 000-00-00", { placeholder: "+ 38 ( ___ ) ___ - __ - __" });
 
   $(document).on('click', function (e) {
